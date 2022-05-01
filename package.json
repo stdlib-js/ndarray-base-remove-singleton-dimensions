@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-remove-singleton-dimensions",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Remove singleton dimensions.",
   "license": "Apache-2.0",
   "author": {
