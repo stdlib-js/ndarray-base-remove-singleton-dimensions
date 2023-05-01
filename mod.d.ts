@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2022 The Stdlib Authors.
@@ -16,14 +16,11 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var isReadOnly = require( '@stdlib/ndarray-base-assert-is-read-only' );
-
-
-// MAIN //
+import { ndarray } from '@stdlib/types/ndarray';
 
 /**
 * Returns an array without singleton dimensions.
@@ -33,11 +30,11 @@ var isReadOnly = require( '@stdlib/ndarray-base-assert-is-read-only' );
 * -   If a provided ndarray does not have any singleton dimensions, the function returns the provided ndarray unchanged.
 * -   If a provided ndarray does have singleton dimensions, the function returns a new ndarray view.
 *
-* @param {ndarray} x - input array
-* @returns {ndarray} squeezed array
+* @param x - input array
+* @returns squeezed array
 *
 * @example
-* var array = require( '@stdlib/ndarray-array' );
+* var array = require( `@stdlib/ndarray/array` );
 *
 * var x = array( [ [ 1, 2 ], [ 3, 4 ] ], {
 *     'ndmin': 5
@@ -65,42 +62,9 @@ var isReadOnly = require( '@stdlib/ndarray-base-assert-is-read-only' );
 * v = y.get( 1, 1 );
 * // returns 4
 */
-function removeSingletonDimensions( x ) {
-	var strides;
-	var shape;
-	var sh;
-	var st;
-	var N;
-	var i;
-
-	sh = x.shape;
-	st = x.strides;
-	N = sh.length;
-
-	strides = [];
-	shape = [];
-
-	// Check for singleton dimensions...
-	for ( i = 0; i < N; i++ ) {
-		if ( sh[ i ] !== 1 ) {
-			shape.push( sh[ i ] );
-			strides.push( st[ i ] );
-		}
-	}
-	if ( shape.length === N ) {
-		// We did not find any singleton dimensions...
-		return x;
-	}
-	if ( isReadOnly( x ) ) {
-		// If provided a read-only view, the returned array should also be read-only...
-		return new x.constructor( x.dtype, x.data, shape, strides, x.offset, x.order, { // eslint-disable-line max-len
-			'readonly': true
-		});
-	}
-	return new x.constructor( x.dtype, x.data, shape, strides, x.offset, x.order ); // eslint-disable-line max-len
-}
+declare function removeSingletonDimensions( x: ndarray ): ndarray;
 
 
 // EXPORTS //
 
-module.exports = removeSingletonDimensions;
+export = removeSingletonDimensions;
