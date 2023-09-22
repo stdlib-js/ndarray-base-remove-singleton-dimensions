@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import removeSingletonDimensions from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-remove-singleton-dimensions@esm/index.mjs';
+import removeSingletonDimensions from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-remove-singleton-dimensions@v0.1.0-esm/index.mjs';
 ```
 
 #### removeSingletonDimensions( x )
@@ -108,7 +108,7 @@ var sh = y.shape;
 import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@esm/index.mjs';
 import numel from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-numel@esm/index.mjs';
 import ind2sub from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ind2sub@esm/index.mjs';
-import removeSingletonDimensions from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-remove-singleton-dimensions@esm/index.mjs';
+import removeSingletonDimensions from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-remove-singleton-dimensions@v0.1.0-esm/index.mjs';
 
 // Create a 5-dimensional array:
 var x = array( [ [ 1, 2 ], [ 3, 4 ] ], {
