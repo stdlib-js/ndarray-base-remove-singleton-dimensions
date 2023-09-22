@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-remove-singleton-dimensions",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Remove singleton dimensions.",
   "license": "Apache-2.0",
   "author": {
@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/ndarray-base-assert-is-read-only": "^0.0.1",
+    "@stdlib/ndarray-base-assert-is-read-only": "^0.1.0",
     "@stdlib/types": "^0.0.14"
   },
   "devDependencies": {
