@@ -1,5 +1,5 @@
-"use strict";var c=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var q=c(function(D,g){
-var h=require('@stdlib/ndarray-base-assert-is-read-only/dist'),n=require('@stdlib/ndarray-base-dtype/dist'),l=require('@stdlib/ndarray-base-shape/dist'),p=require('@stdlib/ndarray-base-strides/dist'),v=require('@stdlib/ndarray-base-offset/dist'),o=require('@stdlib/ndarray-base-order/dist'),f=require('@stdlib/ndarray-base-data-buffer/dist');function d(r){var e,a,i,u,s,t;for(i=l(r,!1),u=p(r,!1),s=i.length,e=[],a=[],t=0;t<s;t++)i[t]!==1&&(a.push(i[t]),e.push(u[t]));return a.length===s?r:h(r)?new r.constructor(n(r),f(r),a,e,v(r),o(r),{readonly:!0}):new r.constructor(n(r),f(r),a,e,v(r),o(r))}g.exports=d
-});var m=q();module.exports=m;
+"use strict";var g=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var o=g(function(S,n){
+var f=require('@stdlib/ndarray-base-dtype/dist'),p=require('@stdlib/ndarray-base-shape/dist'),q=require('@stdlib/ndarray-base-strides/dist'),h=require('@stdlib/ndarray-base-offset/dist'),c=require('@stdlib/ndarray-base-order/dist'),l=require('@stdlib/ndarray-base-data-buffer/dist');function d(r,e){var s,i,a,u,v,t;for(a=p(r,!1),u=q(r,!1),v=a.length,s=[],i=[],t=0;t<v;t++)a[t]!==1&&(i.push(a[t]),s.push(u[t]));return new r.constructor(f(r),l(r),i,s,h(r),c(r),{readonly:!e})}n.exports=d
+});var m=o();module.exports=m;
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
