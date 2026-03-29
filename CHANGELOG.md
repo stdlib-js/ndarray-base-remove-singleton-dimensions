@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-09)
+## Unreleased (2026-03-29)
 
 <section class="features">
 
@@ -35,6 +35,7 @@
 
 <details>
 
+-   [`3c6b016`](https://github.com/stdlib-js/stdlib/commit/3c6b01628169badc19aed4201cb66a5265c5d378) - **refactor:** improve type specificity _(by Athan Reines)_
 -   [`e947540`](https://github.com/stdlib-js/stdlib/commit/e947540a4e87841d7bf140094e20b2768250de11) - **feat:** add writable parameter to `ndarray/base/remove-singleton-dimensions` [(#9667)](https://github.com/stdlib-js/stdlib/pull/9667) _(by Muhammad Haris, Athan Reines)_
 
 </details>
